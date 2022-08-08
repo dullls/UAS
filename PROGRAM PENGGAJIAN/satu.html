@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM PENGGJIAN</title>
+    <link rel="stylesheet" href="coba.css">
+    <script>
+        function hasil(){
+            var bil1=document.getElementById("bil1").value;
+            var bil2=document.getElementById("bil2").value;
+            var tunj="10%";
+            var hasil=parseInt(bil1) * parseInt(bil2) + parseInt(tunj);
+
+            document.getElementById("hasil").value=hasil;
+        }
+    </script>
+</head>
+<body>
+<br>
+<div>
+    <center>
+        <th colspan="2">PROGRAM PENGGJIAN</th>
+    </center>
+</div>
+  <br>
+    <center>
+
+        Nama Pegawai<input id="nama">
+    <div>
+
+    </div>
+
+    <div>
+
+    </div>
+    Jam Kereja<input id="bil1">
+    <div>
+
+    </div>
+
+    Upah Perjam <input id="bil2">
+    <div> 
+
+    </div>
+
+    Juml. Anak<input id="anak">
+    <div> 
+
+    </div>
+
+    Tuj. Anak<input id="tunj">
+    <div> 
+
+    </div>
+
+    Total Gaji<input type="number" id="hasil">
+    <input type=button name=submit onclick="hasil()" value="X"
+    
+    </center>
+    
+</body>
+</html>
