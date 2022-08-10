@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA BARANG</title>
+    <link rel="stylesheet" href="coba.css">
+    <script>
+        function hasil(){
+            var bil1=document.getElementById("bil1").value;
+            var bil2=document.getElementById("bil2").value;
+            var pajak="10%"
+            var Aksesoris = "";
+            if (form.pilih[0].checked){
+                Aksesoris= 50000;
+			}
+			if(form.pilih[1].checked){
+                Aksesoris=120000;
+			} if(form.pilih[2].checked){
+                Aksesoris=40000;
+            }
+           
+            var totalSemua = total+Aksesoris;
+            document.form.total_pembelian.value="Rp "+totalSemua;
+
+            var pajak = totalSemua*0.1;
+            document.form.pajak.value="Rp "+pajak;
+            
+            var total_bayar = totalSemua+pajak;
+            document.form.total_bayar.value="Rp "+total_bayar;
+          }
+        </script>
+</head>
+<body>
+<br>
+<div>
+    <center>
+        <th colspan="2">PPROGRAM PEMBELIAN BARANG</th>
+    </center>
+</div>
+  <br>
+    <center>
+
+Nama Barang <input type="teks" id="NAMA">
+    
+    <div>
+
+    </div>
+    Jumlah<input id="bil1">
+
+    <div>
+        
+    </div>
+   
+
+    Harga <input id="bil2">
+    <div> 
+
+    </div>
+
+
+    <label for="">Aksesoris :</label><br>
+            <input type="radio" name="pilih"> USB <br>
+            <input type="radio" name="pilih"> Memory <br>
+            <input type="radio" name="pilih"> Speaker
+    
+    diskon Total <input type="number" id="diskon">
+    
+    <div> 
+
+    </div>
+
+    Total <input type="number" id="hasil">
+    <input type=button name=submit onclick="hasil()" value="proces"
+    
+    </center>
+    
+</body>
+</html>
